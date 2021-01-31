@@ -16,10 +16,11 @@ function comprobarNumero(){
     }else console.log(`${numeroDNI} no es un número válido`)
     }
     return String(numeroDNI)
-}
+}// Funcion que comprueba si el valor introducido es un numero
 
 function calcularLetraDNI(num){
     let operacion = num%23
     return String(POSIBLES_LETRAS[operacion])
-}
+}// Funcion que calcula la letra del DNI segun el numero introducido
+
 console.log(comprobarNumero() + calcularLetraDNI(numeroDNI))
